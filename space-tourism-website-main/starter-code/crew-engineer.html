@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="bg-crew font-barlow">
+  <div class=" flex justify-between min-w-full  md:mt-5 ">
+    <div class=" h-20 flex items-center  ml-4">
+      <img src="assets\shared\logo.svg" alt="">
+    </div>
+    <div class="pl-40  sm:w-full h-20  bg-nav md:max-w-screen-sd md:pl-40 ">
+      <img class="menu h-20 flex items-center sm:hidden p-7" src="assets\shared\icon-hamburger.svg" alt="">
+      <div class="menu-log hidden absolute top-0 right-0 w-[270px] backdrop-blur-[30px] z-20  opacity-99  min-h-screen sm:opacity-0 ">
+        <img class="close m-7 ml-auto sm:hidden" src="assets\shared\icon-close.svg" alt="">
+        <ul class="m-3 h-52 flex justify-around flex-col text-white sm:hidden">
+          <a href="index.html" class="hover:border-r-4 hover:border-white flex items-center">00 HOME</a>
+          <a href="destination-mars.html" class="hover:border-r-4 hover:border-white flex items-center">01 DESTINATION</a>
+          <a href="crew-commander.html" class="hover:border-r-4 hover:border-white  flex items-center">02 CREW</a>
+          <a href="technology-vehicle.html" class="hover:border-r-4 hover:border-white  flex items-center">03 TECHNOLOGY</a>
+        </ul> 
+      </div>
+      <ul class="yoo h-20 text-white font-barlow hidden sm:flex sm:justify-between  md:pr sm:mr-4 sm:hover:">
+        <a href="index.html" class="hover-nav h-20 flex items-center ">00 HOME</a>
+        <a href="destination-moon.html" class="hover-nav h-20 flex items-center">01 DESTINATION</a>
+        <a href="crew-commander.html" class="hover-nav h-20 flex items-center">02 CREW</a>
+        <a href="technology-vehicle.html" class="hover-nav h-20 flex items-center">03 TECHNOLOGY</a>
+      </ul> 
+    </div>
+  </div>
+  <div class="text-white  font-barlow flex flex-col justify-between items-center min-h-screen gap-14 md:gap-0 m-4 mt-5 md:m-0 md:ml-20 md:mr-20 ">
+  
+    <p class="m-5 sm:self-start"><span class="mr-3">02</span> MEET YOUR CREW</p>
+  
+    <div class=" flex flex-col justify-between items-center md:grid md:grid-cols-2 md:grid-rows-1 ">
+      <div class=" flex flex-col justify-between items-center md:items-start md:m-5 md:h-[734px] md:justify-center md:relative">
+        <p class="text-Color1 text-xl font-barlow md:mb-2 mb-2">FLIGHT ENGINEER</p>
+        <h2 class="text-2xl mb-5 md:text-4xl">ANOUSHEH ANSARI</h2>
+        <p class=" pb-14 mb-3 text-center max-w-[540px] md:text-start">
+          Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
+          Ansari was the fourth self-funded space tourist, the first self-funded woman to 
+          fly to the ISS, and the first Iranian in space.
+        </p>
+        <ul class="font-barlow flex gap-7 md:absolute md:bottom-10 md:left-0 mb-2">
+          <a href="crew-commander.html" class=""><button onclick="on(this)" class="button w-2 h-2 bg-radio rounded hover:bg-white"></button></a>
+          <a href="crew-engineer.html" class=""><button onclick="on(this)" class="button w-2 h-2 bg-white rounded hover:bg-white"></button></a>
+          <a href="crew-pilot.html" class=""><button onclick="on(this)" class="button w-2 h-2 bg-radio rounded hover:bg-white"></button></a>
+          <a href="crew-specialist.html" class=""><button onclick="on(this)" class="button w-2 h-2 bg-radio  rounded hover:bg-white"></button></a>
+        </ul>
+      </div>
+      <div class=" flex flex-col justify-center items-center mt-4 w-[270px] h-[340px] sm:w-[446px] sm:h-[560px] md:w-[539px] md:h-[734px]">
+        <img src="assets\crew\image-anousheh-ansari.webp" alt="" class="min-w-[304px] min-h-[300px]  sm:min-w-[501px] sm:min-h-[494px] sm:mt-5 md:mt-0 md:min-w-[605px] md:min-h-[597px]">
+      </div>
+
+    </div>
+</div>
+<script src="common.js"></script>
+</body>
+</html>

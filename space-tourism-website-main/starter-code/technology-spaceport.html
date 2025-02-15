@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="font-barlow bg-technology text-white">
+  <div class=" flex justify-between min-w-full  md:mt-5 ">
+    <div class=" h-20 flex items-center ml-4">
+      <img src="assets\shared\logo.svg" alt="">
+      <hr class="custom-hr absolute hidden md:flex top-30 left-28 max-w-[570px] z-50 bg-color2">
+    </div>
+    <div class="pl-40  sm:w-full h-20  bg-nav-destination md:max-w-screen-sd md:pl-40">
+      <img class="menu h-20 flex items-center sm:hidden p-7" src="assets\shared\icon-hamburger.svg" alt="">
+      
+      <div class="menu-log hidden absolute top-0 right-0 w-[270px] backdrop-blur-[40px] z-20  opacity-99  min-h-screen sm:opacity-0 ">
+        <img class="close m-7 ml-auto sm:hidden" src="assets\shared\icon-close.svg" alt="">
+        <ul class="m-3 h-52 flex justify-around flex-col text-white sm:hidden">
+          <a href="index.html" class="hover-nav h-20 flex items-center ">00 HOME</a>
+          <a href="destination-moon.html" class="hover-nav h-20 flex items-center">01 DESTINATION</a>
+          <a href="crew-commander.html" class="hover-nav h-20 flex items-center">02 CREW</a>
+          <a href="technology-vehicle.html" class="hover-nav h-20 flex items-center">03 TECHNOLOGY</a>
+        </ul> 
+      </div>
+      <ul class="yoo h-20 text-white font-barlow hidden sm:flex sm:justify-between  md:pr sm:mr-4 sm:hover:">
+        <a href="index.html" class="hover-nav h-20 flex items-center ">00 HOME</a>
+        <a href="destination-moon.html" class="hover-nav h-20 flex items-center">01 DESTINATION</a>
+        <a href="crew-commander.html" class="hover-nav h-20 flex items-center">02 CREW</a>
+        <a href="technology-vehicle.html" class="hover-nav h-20 flex items-center">03 TECHNOLOGY</a>
+      </ul> 
+    </div>
+  </div>
+  <div class="flex flex-col items-center gap-16 md:gap-0 m-5 min-h-screen md:m-14 md:ml-20 md:mr-20">
+          <p class="m-5 sm:self-start md:mb-14"><span class="mr-3 ">03</span> SPACE LAUNCH 101</p>
+
+          <div class="flex flex-col  items-center gap-10 md:justify-between md:flex-row-reverse md:mt-10 ">
+
+            <div class="w-screen sd:flex sd:justify-center  md:w-[508px] md:h-[500px]">
+              <img src="assets\technology\spaceport.png" alt="" class="min-w-full overflow-visible object-contain  min-h-[258px] sm:min-h-[356px] ts:hidden">
+              <img src="assets\technology\image-spaceport-landscape.jpg" alt="" class=" overflow-visible object-contain  min-h-[258px] sm:min-h-[356px] hidden ts:block ms:hidden ts:mb-10">
+              <img src="assets\technology\image-spaceport-portrait.jpg" alt="" class="min-w-[408px] min-h-[400px] object-contain hidden md:block">
+            </div>
+            <div class="flex flex-col items-center gap-7 sm:gap-14 md:flex-row md:justify-between md:items-center">
+
+              <div>
+                <ul class="font-barlow flex justify-center gap-4 sm:gap-5 md:grid ">
+                  <a href="technology-vehicle.html" class=""><button onclick="on(this)" class="button border border-color2 w-10 h-10 sm:w-12 sm:h-12 bg-transparent rounded-full hover:bg-white">1</button></a>
+                  <a href="technology-spaceport.html" class=""><button onclick="on(this)" class="button border border-color2 w-10 h-10 sm:w-12 sm:h-12 bg-white text-black rounded-full hover:bg-white">2</button></a>
+                  <a href="technology-capsule.html" class=""><button onclick="on(this)" class="button border border-color2 w-10 h-10 sm:w-12 sm:h-12 bg-transparent rounded-full hover:bg-white">3</button></a>
+                </ul>
+              </div>
+
+              <div class="flex flex-col justify-between items-center gap-1 sm:gap-3 md:items-start md:justify-center">
+
+                <p class="text-color2 text-xl sm:text-2xl">THE TERMINOLOGY...</p>
+                <h2 class="font-bellefair text-2xl sm:text-4xl">SPACEPORT</h2>
+                <p class="text-center  m-5 max-w-[514px] sm:mt-7 md:text-start md:m-0">
+                  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+                  by analogy to the seaport for ships or airport for aircraft. Based in the 
+                  famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+                  of the Earth’s rotation for launch.
+                </p>
+              </div>
+            </div>
+          </div>
+  </div>
+  <script src="common.js"></script>
+</body>
+</html>

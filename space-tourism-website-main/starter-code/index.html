@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body  style="" class="font-barlow bg-home bg-black">
+  <div class=" flex justify-between min-w-full  md:mt-5 ">
+    <div class=" h-20 flex items-center  ml-4">
+      <img src="assets\shared\logo.svg" alt="">
+      <!--<div class="absolute  top-30 left-[8%] hidden md:flex  bor-white please">
+        <hr class="custom-hr   min-w-full z-50 bg-color2">
+      </div>-->
+    </div>
+    <div class="pl-40  sm:w-full h-20  bg-nav md:max-w-screen-sd md:pl-40">
+      <img class="menu h-20 flex items-center sm:hidden p-7" src="assets\shared\icon-hamburger.svg" alt="">
+      
+      <div class="menu-log hidden absolute top-0 right-0 w-[270px] backdrop-blur-[40px] z-20  opacity-99  min-h-screen sm:opacity-0 ">
+        <img class="close m-7 ml-auto sm:hidden" src="assets\shared\icon-close.svg" alt="">
+        <ul class="m-3 h-52 flex justify-around flex-col text-white sm:hidden">
+          <a href="index.html" class="hover:border-r-4 hover:border-white flex items-center">00 HOME</a>
+          <a href="destination-mars.html" class="hover:border-r-4 hover:border-white flex items-center">01 DESTINATION</a>
+          <a href="crew-commander.html" class="hover:border-r-4 hover:border-white  flex items-center">02 CREW</a>
+          <a href="technology-vehicle.html" class="hover:border-r-4 hover:border-white  flex items-center">03 TECHNOLOGY</a>
+        </ul> 
+      </div>
+      <ul class="yoo h-20 text-white font-barlow hidden sm:flex sm:justify-between  md:pr sm:mr-4 sm:hover:">
+        <a href="index.html" class="hover-nav h-20 flex items-center ">00 HOME</a>
+        <a href="destination-moon.html" class="hover-nav h-20 flex items-center">01 DESTINATION</a>
+        <a href="crew-commander.html" class="hover-nav h-20 flex items-center">02 CREW</a>
+        <a href="technology-vehicle.html" class="hover-nav h-20 flex items-center">03 TECHNOLOGY</a>
+      </ul> 
+    </div>
+  </div>
+  <!--
+ -->
+     <div class="flex justify-center items-end min-h-screen">
+  
+    <div class="flex min-h-screen justify-around items-center flex-col  text-white m-8 m-l">
+      
+      <div class="flex justify-around flex-col  h-64 s-p">
+  
+        <p class="text-center font-bellefair">SO, YOU WANT TO TRAVEL TO</p>
+         <h1 class="text-center font-bellefair text-7xl">SPACE</h1>
+        <p class="text-center leading-6 font-barlow max-w-lg md:text-start">
+            Let’s face it; if you want to go to space, you might as well genuinely go to
+            outer space and not hover kind of on the edge of it. Well sit back, and relax
+            because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+  
+      <div class="flex justify-center relative items-center mt-6">
+        <button class="explore font-bellefair  w-32 h-32 bg-white m-b text-black rounded-full z-10">
+          EXPLORE</button>
+        <button class="explore-hover rounded-full hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 backdrop-blur-[0px] bg-light w-[288px] h-[288px] md:w-[328px] md:h-[328px]"></button>
+      </div>
+  
+    </div>
+</div>
+  <script>
+          const menu    = document.querySelector('.menu')
+          const menulog = document.querySelector('.menu-log')
+          const close   = document.querySelector('.close')
+          const explore = document.querySelector('.explore')
+          const exploreHover = document.querySelector('.explore-hover')
+          menu.addEventListener('click', ()=>{
+            menulog.style.display = 'block';
+          })
+          close.addEventListener('click', ()=>{
+             menulog.style.display = 'none';
+          })
+          explore.addEventListener("mouseenter", function() {
+          exploreHover.style.display = "block"; // Change background color
+        });
+
+         explore.addEventListener("mouseleave", function() {
+         exploreHover.style.display = "none"; // Revert to original color
+        });
+           
+  </script>
+
+</body>
+</html>

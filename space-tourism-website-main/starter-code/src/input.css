@@ -1,0 +1,183 @@
+/* ./src/input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bor-black{
+    border: 3px solid black;
+}
+.bor-white{
+    border: 3px solid white;
+}
+.bg-home{
+    background-image: url('assets/home/background-home-mobile.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+.bg-moon{
+    background-image: url('assets/destination/background-destination-mobile.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+.bg-crew{
+    background-image: url('assets/crew/background-crew-mobile.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+.bg-technology{
+    background-image: url('assets/technology/background-technology-mobile.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+@media (min-width: 400px){
+    .bg-home{
+        background-image: url('assets/home/background-home-tablet.jpg');
+        object-fit: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .bg-moon{
+        background-image: url('assets/destination/background-destination-tablet.jpg');
+        background-size: cover;
+        object-fit: contain;
+        background-repeat: no-repeat;
+    
+    }
+    .bg-crew{
+        background-image: url('assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+        object-fit: contain;
+        background-repeat: no-repeat;
+    }
+    .bg-technology{
+        background-image: url('assets/technology/background-technology-tablet.jpg');
+        background-size: cover;
+        object-fit: contain;
+        background-repeat: no-repeat;
+    }
+    .m-b{
+        width: 172px;
+        height: 172px;
+    }
+
+}
+.bg-nav{
+    background-color: #191B26;
+}
+.bg-radio{
+    background-color: #44464D;
+}
+.button .active{
+    background-color: white;
+}
+
+.hover-nav:hover{
+    border-bottom: 3px solid white;
+}
+.bg-light{
+    background-color: rgba(144, 144, 144, 0.2);
+}
+
+
+@media (min-width: 928px){
+   .bg-home{
+    background-image: url('assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    
+   }
+   .bg-moon{
+    background-image: url('assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+
+}
+   .bg-crew{
+    background-image: url('assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+   .bg-technology{
+    background-image: url('assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}  
+   .m-b{
+    width: 192px;
+    height: 192px;
+}
+   .m-l{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1110px;
+    height: 468px;
+    box-sizing: border-box;
+   }
+   .s-p{
+    align-items: start;
+   }
+   .bg-nav{
+    background-color: transparent;
+    backdrop-filter: blur(30px); /* Adjust the blur level */ 
+    opacity: 0.99
+
+   }
+   .bg-nav-destination{
+    background-color: #191B26;
+    backdrop-filter: blur(30px); /* Adjust the blur level */ 
+    opacity: 0.99
+   }
+
+}
+.fit-screen {
+    width: 100vw;
+    object-fit: cover;
+    overflow-x: visible;
+  }
+.please{
+    width: 30vw;
+}
+.custom-hr {
+    border: 0;
+    height: 1px;
+    background-color: #474951;
+  }
+.radio-link input[type="radio"]:checked{
+    background-color: rgb(227, 30, 30);
+  }
+@font-face{
+    font-family: 'Barlow';
+    src: url('assets/Barlow-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'Bellefair';
+    src: url('assets/Bellefair-Regular.ttf') format('truetype');
+}
+@layer base {
+    html {
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+.bor-black{
+    border: 3px solid black;
+}
+.bor-white{
+    border: 3px solid rgb(255, 255, 255);
+}
+.min-h-half{
+    min-height: 50vh;
+
+}
+
