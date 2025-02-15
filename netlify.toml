@@ -1,5 +1,0 @@
-[build]
-  publish = "space-tourism-website-main"
-
-[functions]
-  included_files = ["space-tourism-website-main/starter-code/**"]
