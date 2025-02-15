@@ -1,0 +1,6 @@
+[build]
+  publish = "space-tourism-website-main"
+  command = "npm run build"  # If you have a build command, otherwise you can remove this line.
+
+[functions]
+  included_files = ["space-tourism-website-main/starter-code/**"]
