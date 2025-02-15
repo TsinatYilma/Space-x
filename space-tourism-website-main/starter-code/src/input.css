@@ -66,9 +66,7 @@
     }
 
 }
-.bg-nav{
-    background-color: #191B26;
-}
+
 .bg-radio{
     background-color: #44464D;
 }
@@ -83,7 +81,16 @@
     background-color: rgba(144, 144, 144, 0.2);
 }
 
-
+@media (min-width: 640px){
+    .bg-nav{
+        background-color: #191B26;
+    }
+    .bg-nav-destination{
+        background-color: #191B26;
+        backdrop-filter: blur(30px); /* Adjust the blur level */ 
+        opacity: 0.99
+       }
+}
 @media (min-width: 928px){
    .bg-home{
     background-image: url('assets/home/background-home-desktop.jpg');
@@ -146,9 +153,7 @@
     object-fit: cover;
     overflow-x: visible;
   }
-.please{
-    width: 30vw;
-}
+
 .custom-hr {
     border: 0;
     height: 1px;

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    
+    "index.html",
     "./space-tourism-website-main/starter-code/*.html"],
   theme: {
     extend: {
@@ -32,6 +32,7 @@ module.exports = {
     colors: {
       Color1: '#8D8F93',
       color2: '#474951',
+      bgcolor: '#191B26',
     },
   },
   plugins: []
